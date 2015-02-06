@@ -1,0 +1,425 @@
+html, body{
+	margin:0px;
+	padding:0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:black;
+}
+
+.mobile_only{
+	display:none;
+}
+
+a{
+	text-decoration:none;
+	color:#f47920;
+	
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-ms-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+}
+
+.desktop a:hover{
+	color:#faaf7a;
+}
+
+a img{
+	border:none;
+}
+
+ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;	
+}
+
+/********************************* CONTAINER ALL *************************************/
+
+.container_all{
+	width:940px;
+	margin:auto;
+}
+
+.shadow_bottom{
+	position:absolute;
+	left:0px;
+	bottom:-36px;
+	height:36px;
+	width:100%;
+	background:url(../im/shadow_bottom.png) no-repeat 50% 0%;
+	z-index:1;
+}
+
+/********************************* MASTHEADS *************************************/
+
+.mastheads{
+	height:501px;
+	position:relative;
+}
+
+/****** PAGINATION *******/
+
+.mastheads ul.pagination{
+	position:absolute;
+	z-index:1;
+	left:0px;
+	width:100%;
+	bottom:15px;
+	text-align:center;
+}
+
+.mastheads ul.pagination li{
+	display:inline-block;
+	width:14px;
+	height:14px;
+	background:url(../im/spritesheet.png) no-repeat 0px 0px;
+	cursor:pointer;
+	margin:0px 2px 0px 2px;
+}
+
+.mastheads ul.pagination li.active,
+.desktop .mastheads ul.pagination li:hover{
+	background-position:0px -23px;
+}
+
+/****** MASTHEAD *******/
+
+.mastheads .masthead{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+}
+
+/********************************* INTRO *************************************/
+
+.intro{
+	padding:35px 20px 30px 20px;
+	background:url(../im/intro/bg.jpg) repeat-x 0px 100%;
+	position:relative;
+	text-align:right;
+}
+
+
+/****** PROBLEM SITUATION ******/
+
+.intro .problem_situation{
+	position:absolute;
+	width:422px;
+	line-height:21px;
+	margin-top:30px;
+	text-align:left;
+	left:0px;
+}
+
+
+/****** PRODUCT INTRO ******/
+
+.intro .product_intro{
+	display:inline-block;
+	text-align:left;
+	background:white;
+	border:1px solid black;
+	width:325px;
+	height:405px;
+	padding:30px 20px 30px 20px;
+	
+	font-size:14px;
+	line-height:21px;
+}
+
+.intro .product_intro h1{
+	font-size:20px;
+	line-height:27px;
+	color:#003872;
+	margin:0px 0px 20px 0px;
+	padding:0px;
+}
+
+.intro .product_intro .cta{
+	font-size:16px;
+	line-height:20px;
+}
+
+.intro .product_intro .cta li{
+	margin-top:15px;
+}
+
+.intro .product_intro .cta a{
+	display:block;
+	background:url(../im/spritesheet.png) no-repeat 0px -45px;
+	padding-left:25px;
+	font-weight:bold;
+}
+
+/********************************* BENEFITS *************************************/
+
+.benefits{
+	position:relative;
+}
+
+.benefits > h2{
+	font-size:24px;
+	line-height:26px;
+	color:#003872;
+	padding:50px 20px 20px 20px;
+	margin:0px;
+}
+
+/****** TABS ******/
+
+.benefits .tabs{
+	border-bottom:3px solid #003872;
+	height:63px;
+	position:relative;
+}
+
+.benefits .tabs li{
+	display:inline-block;
+	vertical-align:bottom;
+	padding:10px;
+	color:#003872;
+	position:absolute;
+	background:#ebebeb;
+	width:280px;
+	height:43px;
+	
+	cursor:pointer;
+	
+	left:50%;
+	margin-left:-150px;
+	z-index:1;
+	
+	-webkit-transition: all .05s linear;
+	-moz-transition: all .05s linear;
+	-ms-transition: all .05s linear;
+	-o-transition: all .05s linear;
+	transition: all .05s linear;
+}
+
+.benefits .tabs li .pointer{
+	width:23px;
+	height:15px;
+	background:url(../im/benefits/tab_pointer.png) no-repeat;
+	left:50%;
+	margin-left:-12px;
+	bottom:-15px;
+	position:absolute;
+	
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+	
+	-webkit-transition: all .05s linear;
+	-moz-transition: all .05s linear;
+	-ms-transition: all .05s linear;
+	-o-transition: all .05s linear;
+	transition: all .05s linear;
+}
+
+.benefits .tabs li.first{
+	margin-left:0px;
+	left:0px;
+}
+
+.benefits .tabs li.last{
+	margin-left:0px;
+	left:auto;
+	right:0px;
+}
+
+.benefits .tabs li .number{
+	display:inline-block;
+	font-size:34px;
+	line-height:34px;
+	font-weight:bold;
+	vertical-align:middle;
+}
+
+.benefits .tabs li h3{
+	display:inline-block;
+	margin:0px 0px 0px 5px;
+	padding:0px;
+	font-size:16px;
+	line-height:16px;
+	vertical-align:middle;
+}
+
+.benefits .tabs li.active,
+.benefits .tabs li:hover{
+	color:white;
+	background:#003872;
+}
+
+.benefits .tabs li.active .pointer{
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+
+/****** TAB CONTENTS ******/
+
+.benefits .tab_contents{
+	position:relative;
+	height:360px;
+}
+
+.benefits .tab_contents .tab_content{
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0px;
+	top:0px;
+	background:white;
+	/*
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+	*/
+	-webkit-transition: all .4s ease-out;
+	-moz-transition: all .4s ease-out;
+	-ms-transition: all .4s ease-out;
+	-o-transition: all .4s ease-out;
+	transition: all .4s ease-out;
+}
+
+.benefits .tab_contents .tab_content.active{
+	/*
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+	*/
+}
+
+.benefits .tab_contents .tab_content .contents{
+	margin:10px 20px 50px 20px;
+	position:relative;
+	font-size:14px;
+}
+
+.benefits .tab_contents .tab_content .contents .col_left{
+	position:absolute;
+	left:60px;
+	margin-top:30px;
+}
+
+.benefits .tab_contents .tab_content .contents .col_right{
+	position:absolute;
+	right:60px;
+	margin-top:30px;
+}
+
+.benefits .tab_contents .tab_content .contents table{
+	width:100%;
+	border-collapse:collapse;
+}
+
+.benefits .tab_contents .tab_content .contents table tr td,
+.benefits .tab_contents .tab_content .contents table tr th{
+	padding:5px;
+	border:none;
+	text-align:left;
+}
+
+.benefits .tab_contents .tab_content .contents table tr th{
+  background:#ebebeb;
+}
+
+.benefits .tab_contents .tab_content .contents .fine_print{
+	font-size:11px;
+	color:#898989;
+	padding:5px;
+}
+
+/****** GLOBAL YIELD STOCKS *******/
+.benefits .tab_contents #tab_global_yield_stocks.tab_content{
+	padding-top:20px;
+}
+
+.benefits .tab_contents #tab_global_yield_stocks.tab_content .contents .col_left{
+	left:60px;
+}
+
+.benefits .tab_contents #tab_global_yield_stocks.tab_content .contents .col_right{
+	width:270px;
+}
+
+/****** STABILISER MECHANISM *******/
+.benefits .tab_contents #tab_stabiliser_mechanism.tab_content .contents .col_left{
+	left:35px;
+}
+
+.benefits .tab_contents #tab_stabiliser_mechanism.tab_content .contents .col_right{
+	width:460px;
+}
+
+
+/****** REGULAR PAYOUTS*******/
+.benefits .tab_contents #tab_regular_payouts.tab_content .contents .col_left{
+	width:220px;
+	color:#959595;
+	font-weight:bold;
+}
+
+.benefits .tab_contents #tab_regular_payouts.tab_content .contents .col_left table{
+	color:black;
+	font-weight:normal;
+	margin-top:5px;
+}
+
+.benefits .tab_contents #tab_regular_payouts.tab_content .contents .col_right{
+	width:460px;
+}
+
+
+/********************************* DISTRIBUTORS *************************************/
+.distributors{
+	padding:60px 20px 100px 20px;
+}
+
+.distributors h5{
+	font-size:16px;
+	color:#333333;
+	margin:0px 0px 40px 0px;
+}
+
+.distributors ul{
+	text-align:center;
+	width:100%;
+}
+
+.distributors ul li{
+	display:inline-block;
+	text-align:center;
+	vertical-align:bottom;
+	font-size:12px;
+	color:#333333;
+	margin:0px 50px 0px 50px;
+}
+
+.distributors ul li a{
+	color:#333333;
+}
+
+.distributors ul li img{
+	display:block;
+	margin:0px auto 15px auto;
+}
+
+.fine_print{
+	font-size:11px;
+	color:#898989;
+	padding:5px;
+}
+

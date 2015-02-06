@@ -1,0 +1,183 @@
+/********************************* CONTAINER ALL *************************************/
+body{
+	/*width:auto;
+	/*margin:auto;*/
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.mobile_only{
+	display:block;
+}
+
+.non_mobile_only{
+	display:none;
+}
+
+.container_all{
+    width:auto;
+}
+
+.shadow_bottom{
+	background-size:380px 15px;
+	height:15px;
+	bottom:-15px;
+}
+
+/********************************* MASTHEADS *************************************/
+
+.mastheads{
+	height:187px;
+	height:auto;
+}
+
+/****** MASTHEAD *******/
+.mastheads .masthead{
+	position:relative;
+}
+
+
+.mastheads .masthead img{
+	width:100%;
+}
+
+/********************************* INTRO *************************************/
+
+.intro{
+	padding:25px 10px 25px 10px;
+	text-align:left;
+}
+
+
+/****** PROBLEM SITUATION ******/
+
+.intro .problem_situation{
+	position:static;
+	width:100%;
+	margin-top:0px;
+}
+
+
+
+/****** PRODUCT INTRO ******/
+
+.intro .product_intro{
+	display:block;
+	border:1px solid #eaeaea;
+	width:auto;
+	height:auto;
+	padding:25px 15px 25px 15px;
+	margin-top:30px;
+	
+	font-size:14px;
+	line-height:21px;
+}
+
+.intro .product_intro h1{
+	font-size:17px;
+	line-height:22px;
+}
+
+
+
+/********************************* BENEFITS *************************************/
+
+
+.benefits > h2{
+	font-size:17px;
+	line-height:20px;
+	padding:30px 0px 40px 15px;
+}
+
+
+/****** TABS ******/
+
+.benefits .tabs{
+	border-bottom:3px solid #003872;
+	height:auto;
+	position:relative;
+}
+
+.benefits .tabs li{
+	position:relative;
+	display:inline-block;
+	margin:0px 15px 0px 0px!important;
+	left:auto !important;
+	right:auto !important;
+	height:auto;
+	width:auto;
+}
+
+.benefits .tabs li.last{
+	margin:0px !important;
+}
+
+/****** TAB CONTENTS ******/
+
+.benefits .tab_contents{
+	height:700px;
+}
+
+.benefits .tab_contents .tab_content .contents{
+	position:static;
+}
+
+.benefits .tab_contents .tab_content .contents h2{
+	font-size:16px;
+	line-height:16px;
+	color:#003872;
+	padding:15px 0px 10px 0px;
+	margin:0px;
+}
+
+.benefits .tab_contents .tab_content .contents .col_left{
+	position:static;
+	width:100% !important;
+}
+
+.benefits .tab_contents .tab_content .contents .col_left img{
+	max-width:100%;
+	width:auto;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+
+.benefits .tab_contents .tab_content .contents .col_right{
+	position:static;
+	width:100% !important;
+}
+
+/****** GLOBAL YIELD STOCKS *******/
+.benefits .tab_contents #tab_global_yield_stocks.tab_content{
+	padding-top:0px;
+}
+
+/****** REGULAR PAYOUTS*******/
+
+.benefits .tab_contents #tab_regular_payouts.tab_content .contents .col_right{
+	margin-top:0px;
+}
+
+.benefits .tab_contents #tab_regular_payouts.tab_content .contents .col_right .fine_print{
+	position:absolute;
+	bottom:20px;
+}
+
+/****** STABILISER MECHANISM *******/
+.benefits .tab_contents #tab_stabiliser_mechanism.tab_content .contents .col_right{
+	margin-top:0px;
+}
+
+.benefits .tab_contents #tab_stabiliser_mechanism.tab_content .contents .col_right .fine_print{
+	position:absolute;
+	bottom:20px;
+}
+
+
+
+/********************************* DISTRIBUTORS *************************************/
+
+.distributors ul li{
+	margin:0px 20px 40px 20px;
+}

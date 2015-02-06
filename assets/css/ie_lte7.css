@@ -1,0 +1,26 @@
+
+
+.mastheads ul.pagination li{
+	display:inline;
+}
+
+.intro .product_intro{
+	display:inline;
+}
+
+.benefits .tabs li{
+	display:inline;
+}
+
+.benefits .tabs li .number{
+	display:inline;
+}
+
+.benefits .tabs li h3{
+	display:inline;
+}
+
+.distributors ul li{
+	display:inline;
+	width:180px;
+}
